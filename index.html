@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay">
+            <div class="overlay__search">
+                <input type="text" id="overlay__input" placeholder="Enter city name + Enter">
+            </div>
+        </div>
+        <div class="weather">
+            <div class="weather__main">
+                <div class="weather__city"></div>
+                <div class="weather__temperature"></div>
+            </div>
+            <div class="weather__side">
+                <div class="weather__search">
+                    <input type="text" id="search" placeholder="Enter city name...">
+                    <button class="weather__btn">Search</button>
+                </div>
+                <div class="weather__properties">
+                    <ul class="weather__list">
+                        <li class="weather__property max-temperature">max-temperature:</li>
+                        <li class="weather__property min-temperature">min-temperature:</li>
+                        <li class="weather__property feelsLike">feels like:</li>
+                        <li class="weather__property humidity">humidity:</li>
+                        <li class="weather__property description">description:</li>
+                        <li class="weather__property country">Country:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
