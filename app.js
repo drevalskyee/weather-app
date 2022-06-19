@@ -17,7 +17,6 @@ const weatherMainDiv = document.querySelector('.weather__main');
 const overlay = document.querySelector('.overlay');
 
 
-
 //Listeners
 searchButton.addEventListener('click', fetchWeather)
 searchInput.addEventListener('keypress', inputHandler)
@@ -105,7 +104,7 @@ function changeBackground(data) {
     weatherMainDiv.classList.add('broken-cloud')
   }
 
-  else if (description === 'light rain' || description === 'heavy intensity rain' || description ===  'moderate rain') {
+  else if (description === 'light rain' || description === 'heavy intensity rain' || description === 'moderate rain') {
 
     weatherMainDiv.classList.remove('scattered-cloud', 'most-cloud', 'sun', 'ligth-snow', 'broken-cloud')
     weatherMainDiv.classList.add('rain')
